@@ -24,7 +24,7 @@ body {
     position: absolute;
     width: 200px;
     height: 100px;
-    left: 1200px;
+    left: 1000px;
     background-image: url(tiny-g-logo.png);
     /* background-color: white; */
     top: 20px;
@@ -118,7 +118,7 @@ nav a:focus::after {
     position: absolute;
     left: 5.21%;
     right: 90.19%;
-    top: 50px;
+    top: -50px;
     bottom: 92.87%;
     color: #FFFFFF;
     font-size: 24px;
@@ -133,7 +133,7 @@ nav a:focus::after {
     position: absolute;
     left: 8%;
     right: 90.19%;
-    top: 100px;
+    top: 0px;
     bottom: 92.87%;
     color: #FFFFFF;
     font-size: 24px;
@@ -151,7 +151,7 @@ nav a:focus::after {
     position: absolute;
     left: 5.21%;
     right: 96%;
-    top: 100px;
+    top: 80px;
     bottom: 92.87%;
     color: #FFFFFF;
     font-size: 48px;
@@ -165,7 +165,7 @@ nav a:focus::after {
     position: absolute;
     left: 10%;
     right: 90.19%;
-    top: 100px;
+    top: 80px;
     bottom: 92.87%;
     color: #FFFFFF;
     font-size: 48px;

@@ -223,7 +223,7 @@ nav a:focus::after {
     
 }
 
-@media(max-width: 1920px) and (max-height: 1080px) {
+/* @media(max-width: 1920px) and (max-height: 1080px) {
     body {
         background-image: url(background.jpg);
         background-size: cover;
@@ -403,7 +403,7 @@ nav a:focus::after {
         left: 730px;
         
     }
-}
+} */
 
 
         @media (min-width: 390px) and (max-width: 844px) {

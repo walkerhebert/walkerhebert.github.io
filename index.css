@@ -318,7 +318,7 @@ nav a:focus::after {
     }
     
     #jobtitle1 {
-        margin-top: 300px;
+        margin-top: 150px;
         position: absolute;
         left: 5.21%;
         right: 90.19%;
@@ -332,7 +332,7 @@ nav a:focus::after {
     }
     
     #jobtitle2 {
-        margin-top: 310px;
+        margin-top: 160px;
         position: absolute;
         left: 8%;
         right: 90.19%;
@@ -348,7 +348,7 @@ nav a:focus::after {
     }
     
     #name1 {
-        margin-top: 100px;
+        margin-top: 70px;
         position: absolute;
         left: 5.21%;
         right: 96%;
@@ -361,7 +361,7 @@ nav a:focus::after {
     }
     
     #name2 {
-        margin-top: 80px;
+        margin-top: 50px;
         position: absolute;
         left: 10%;
         right: 90.19%;

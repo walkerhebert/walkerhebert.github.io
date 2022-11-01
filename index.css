@@ -129,7 +129,7 @@ nav a:focus::after {
 }
 
 #jobtitle2 {
-    margin-top: 400px;
+    margin-top: 300px;
     position: absolute;
     left: 8%;
     right: 90.19%;
@@ -223,7 +223,7 @@ nav a:focus::after {
     
 }
 
- @media(max-width: 1920px) and (max-height: 1080px) {
+ /* @media(max-width: 1920px) and (max-height: 1080px) {
     body {
         background-image: url(background.jpg);
         background-size: cover;
@@ -246,7 +246,7 @@ nav a:focus::after {
         left: 855px;
         background-image: url(tiny-g-logo.png);
         /* background-color: white;  */
-        top: 20px;
+        /* top: 20px;
         background-size: cover;
     } 
     #insta {
@@ -403,7 +403,7 @@ nav a:focus::after {
         left: 730px;
         
     }
-}
+} */ 
 
 
         @media (min-width: 390px) and (max-width: 844px) {

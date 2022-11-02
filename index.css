@@ -18,6 +18,10 @@ body {
     background-color: #000000;
 }
 
+.txtNav {
+    display: flex;
+    flex-direction: row;
+}
 
 .my-button {
   background-color: transparent;
@@ -54,6 +58,15 @@ font-size: 22px;
 padding-top: 20%;
 padding: 1em;
 font-weight: 700;
+}
+
+a:hover {
+    color: #545454;
+    transition: ease-in-out .25s;
+}
+
+a:not(:hover) {
+    transition: ease-out .5s;
 }
 
 nav ul li {
@@ -93,6 +106,8 @@ nav ul li:hover {
     
 }
 
+
+
 .logo2:hover {
     transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transition: all .5s ease;
@@ -104,10 +119,44 @@ nav ul li:hover {
 
 .fa-instagram {
     color: white;
+    text-decoration: none;
+}
+
+.fa-instagram:hover {
+    color: #545454;
+    transition: ease-in-out .25s;
+}
+
+.fa-instagram:not(:hover) {
+    transition: ease-out .25s;
 }
 
 .fa-linkedin {
     color: white;
+    text-decoration: none;
+}
+
+.fa-linkedin:hover {
+    color: #545454;
+    transition: all .25 ease;
+}
+
+.fa-linkedin:not(:hover) {
+    transition: ease-out .25s;
+}
+
+.fa-github {
+    color: white;
+    text-decoration: none;
+}
+
+.fa-github:hover {
+    color: #545454;
+    transition: all .25 ease;
+}
+
+.fa-github:not(:hover) {
+    transition: ease-out .25s;
 }
 
 #jobtitle1 {
@@ -251,14 +300,14 @@ nav ul li:hover {
         top: 20px;
         background-size: cover; */
         display: flex;
-    justify-content: left;
-    position: absolute;
-    width: 200px;
-    height: 100px;
-    background-image: url(tiny-g-logo.png);
-    top: 2%;
-    background-size: cover;
-    left: 3%;
+        justify-content: left;
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background-image: url(tiny-g-logo.png);
+        top: 2%;
+        background-size: cover;
+        left: 3%;
 
     } 
     
@@ -356,10 +405,10 @@ nav ul li:hover {
     }
 
     .videos {
-        position: absolute;
+        /* position: absolute; */
         display: flex;
         flex-direction: row;
-        top: 350px;
+       bottom: 0%;
         width: 700px;
         left: 730px;
         
@@ -382,9 +431,11 @@ nav ul li:hover {
                 height: 100%;
             }
             
-            nav ul {
-                display: none;
+            .txtNav {
                 flex-direction: column;
+              }
+
+              nav ul {
                 width: 100%;
                 height: 100vh;
                 padding-top: 150px;
@@ -471,7 +522,6 @@ nav ul li:hover {
                 color: #FFFFFF;
                 font-size: 50px;
                 padding-left: 10px;
-                
                 color: #7FB9FD;
                 padding-top: 62px;
                 font-weight: 700;
@@ -503,7 +553,41 @@ nav ul li:hover {
                 color: gray;
                 z-index: -1;
             }
+
+            #my-nav {
+                display: none;
+            }
             
+            #my-nav.show {
+                justify-content: center;
+            }
+
+            #my-nav a {
+                align-items: center;
+            }
+
+            .icons {
+                display: flex;
+                flex-direction: row;
+               justify-content: center;
+               margin-top: -150%;
+               margin-left: -19%;
+            }
+
+            .txtNav {
+                margin-left: -13.5%;
+                margin-bottom: 190%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #icon1 {
+                margin-right: -110px;
+            }
+            #icon2 {
+                margin-right: -110px;
+            }
+
             #paragraph {
                 width: 260px;
                 font-size: 15px;
@@ -549,6 +633,37 @@ nav ul li:hover {
                 transition: ease-in .25s;
             }
 
+
+            nav ul {
+                /* display: none; */
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100% !important;
+                margin: 0;
+                
+              }
+    
+              .txtNav {
+                /* display: none; */
+              }
+              
+              nav ul i {
+                display: flex !important;
+                flex-direction: row !important;
+              }
+    
+              #my-nav.show {
+                display: flex;
+              }
+              
+              .my-button {
+                display: block;
+                color: white;
+                right: 10%;
+              }
+              nav {
+                background-color: rgb(14, 14, 14);
+            }
         }
 
         @media (max-width: 600px) {
@@ -560,13 +675,17 @@ nav ul li:hover {
             margin: 0;
             
           }
+
+          .txtNav {
+            /* display: none; */
+          }
           
           nav ul i {
             display: flex !important;
             flex-direction: row !important;
           }
 
-          nav ul.show {
+          #my-nav.show {
             display: flex;
           }
           

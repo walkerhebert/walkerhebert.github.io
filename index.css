@@ -411,14 +411,14 @@ nav ul li:hover {
                 width: 200px;
                 height: 200px;
                 position: absolute;
-                top: 23.8%;
+                top: 19%;
                 left: 25%;
                 z-index: -1;
             }
 
             #toptext {
                 position: absolute;
-                top: 50%;
+                top: 48%;
                 color: #7FB9FD;
                 font-size: 30px;
                 width: 200px;
@@ -508,7 +508,7 @@ nav ul li:hover {
                 width: 260px;
                 font-size: 15px;
                 position: absolute;
-                top: 50%;
+                top: 48%;
                 color: rgb(255, 255, 255);
                 height: 300px;
                 display: flex;

@@ -1,12 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+*  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
 body {
+    margin: 0;
+    height: 100vh;
     background-image: url(background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
     color: rgb(255, 255, 255);
     caret-color: transparent;
+}
+
+
+.my-button {
+  background-color: transparent;
+  border: 10px;
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 32px;
+  float: left;
+  line-height: 70px;
+  display: none;
+}
+
+.my-button:focus {
+  outline: none;
+}
+
+nav {
+    background-color: transparent;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding-right: 2%;
+    padding-top: 1%;
+    font-size: 20px;
+    font-weight: 700;
+}
+nav ul i {
+font-size: 22px;
+padding-top: 20%;
+padding: 1em;
+font-weight: 700;
+}
+
+nav ul li {
+    padding: 20px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    color: #000000;
+    transition: ease-in-out .25s;
+    text-decoration: none;
 }
 
 .container {
@@ -20,15 +81,14 @@ body {
 
 .logo2 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     position: absolute;
     width: 200px;
     height: 100px;
-    left: 1200px;
     background-image: url(tiny-g-logo.png);
-    /* background-color: white; */
-    top: 20px;
+    top: 2%;
     background-size: cover;
+    left: 3%;
     
 }
 
@@ -40,77 +100,13 @@ body {
 .logo2:not(:hover) {
     transition: ease-out .5s;
 }
-#insta {
-    position: absolute;
-    left: 85.49%;
-    right: 12.92%;
-    top: 45px;
-    bottom: 92.87%;
-    color: #FFFFFF;
-    transition: color 0.2s;
-    height: 50px;
-    width: 50px;
+
+.fa-instagram {
+    color: white;
 }
 
-#insta:hover {
-    color: #b8b8b8;
-}
-
-#linkedin {
-    position: absolute;
-    left: 90.21%;
-    right: 8.19%;
-    top: 45px;
-    bottom: 92.87%;
-    color: #FFFFFF;
-    transition: color 0.2s;
-}
-
-#linkedin:hover {
-    color: #b8b8b8;
-}
-nav li {
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 10px;
-    position: relative;
-}
-
-a {
-    display: block;
-    position: relative;
-    padding: 0.2rem 0;
-    font-size: 30px;
-}
-a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.1em;
-    background-color: rgb(255, 255, 255);
-    opacity: 0;
-    transition: opacity 300ms, transform 300ms;
-  }
-nav a::after {
-    opacity: 1;
-    transform: scale(0);
-    transform-origin: center;
-}
-
-nav a:hover::after,
-nav a:focus::after {
-    opacity: 1;
-    transform: scale(1);
-    transition: transform 0.3s;
-}
-
- nav a {
-    color: rgb(254, 254, 254);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 22px;
+.fa-linkedin {
+    color: white;
 }
 
 #jobtitle1 {
@@ -139,7 +135,6 @@ nav a:focus::after {
     font-size: 24px;
     padding-left: 10px;
     padding-bottom: 10px;
-    
     color: #7FB9FD;
     font-size: 100px;
     padding-top: 62px;
@@ -193,7 +188,7 @@ nav a:focus::after {
     position: absolute;
     left: 34%;
     top: 400px;
-    color: #ffffff;
+    color: #7FB9FD;
     font-size: 50px;
     padding-left: 20px;
     padding-top: 20px;
@@ -202,15 +197,14 @@ nav a:focus::after {
 
 #paragraph {
     position: absolute;
-    left: 4.6%;
+    display: flex;
+    flex-direction: row;
+    left: 28%;
     top: 450px;
     color: white;
     font-size: 24px;
-    padding-left: 20px;
-    padding-top: 20px;
     padding-top: 100px;
-    padding-left: 600px;
-    width: 700px;
+    max-width: 700px;
 }
 
 .videos {
@@ -223,7 +217,15 @@ nav a:focus::after {
     
 }
 
+
+
  @media(max-width: 1920px) and (max-height: 1080px) {
+    *  {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+
     body {
         background-image: url(background.jpg);
         background-size: cover;
@@ -249,37 +251,7 @@ nav a:focus::after {
         top: 20px;
         background-size: cover;
     } 
-    #insta {
-        position: absolute;
-        left: 85.49%;
-        right: 12.92%;
-        top: 50px;
-        bottom: 92.87%;
-        color: #FFFFFF;
-        transition: color 0.2s;
-        height: 50px;
-        width: 50px;
-        font-size: 20px;
-    }
     
-    #insta:hover {
-        color: #b8b8b8;
-    }
-    
-    #linkedin {
-        position: absolute;
-        left: 90.21%;
-        right: 8.19%;
-        top: 50px;
-        bottom: 92.87%;
-        color: #FFFFFF;
-        transition: color 0.2s;
-        font-size: 20px;
-    }
-    
-    #linkedin:hover {
-        color: #b8b8b8;
-    }
     nav li {
         display: inline-block;
         margin-left: 70px;
@@ -287,35 +259,7 @@ nav a:focus::after {
         position: relative;
     }
     
-    nav p {
-        color: rgb(254, 254, 254);
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 20px;
-    }
     
-    nav p:hover {
-        color: rgb(255, 255, 255);
-    }
-    
-    nav p::after {
-        content: '';
-        display: block;
-        height: 2px;
-        background-color: rgb(255, 255, 255);
-        position: absolute;
-        top: 55px;
-        width: 0%;
-        transition: ease-in-out 180ms;
-        opacity: 1;
-        transform: scale(0);
-        transform-origin: center;
-    }
-    
-    nav p:hover::after,
-    nav p:focus::after {
-        transform: scale(1);
-    }
     
     #jobtitle1 {
         margin-top: 150px;
@@ -375,8 +319,7 @@ nav a:focus::after {
     }
     
     #paragraph {
-        
-        width: 550px;
+        max-width: 550px;
     }
     
     #toptext {
@@ -406,20 +349,55 @@ nav a:focus::after {
 } 
 
 
-        @media (min-width: 390px) and (max-width: 844px) {
+        @media (max-width: 800px) {
+            
+          *  {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            }
+            
             body {
                 background-image: url(background-mobile.jpg);
                 background-size: cover;
-                
+                width: 100%;
+                height: 100%;
             }
             
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                height: 100vh;
+                padding-top: 150px;
+              }
+
+              
+            nav li {
+                color: red;
+                }
+
+              nav ul.show {
+                display: flex;
+                
+              }
+              
+              .my-button {
+                display: block;
+                color: white;
+                position: fixed;
+                top: 1%;
+              }
+
             #evwalk {
                 width: 200px;
                 height: 200px;
                 position: absolute;
                 top: 25%;
                 left: 25%;
+                z-index: -1;
             }
+
             #toptext {
                 position: absolute;
                 top: 50%;
@@ -427,103 +405,27 @@ nav a:focus::after {
                 font-size: 30px;
                 width: 200px;
                 height: 200px;
-                left: 80px
+                left: 30%;
+                z-index: -1;
             }
         
-            .container {
-                width: 100%;
-                margin: 0 auto;
+
+            nav ul i {
+                padding-left: 5em;
                 display: flex;
-                justify-content: left;
-                caret-color: transparent;
+                flex-direction: row !important;
             }
-            
+
             .logo2 {
                 display: flex;
-                justify-content: center;
-                position: absolute;
-                width: 200px;
-                height: 100px;
-                left: 100px;
+                position: fixed;
+                width: 100px;
+                height: 50px;
+                left: 1%;
                 background-image: url(tiny-g-logo.png);
                 top: 20px;
                 background-size: cover;
                 right: 500px;
-            }
-            #insta {
-                position: absolute;
-                left: 85.49%;
-                right: 12.92%;
-                top: 50px;
-                bottom: 92.87%;
-                color: #FFFFFF;
-                transition: color 0.2s;
-                height: 50px;
-                width: 50px;
-                font-size: 20px;
-                display: none;
-            }
-            
-            #insta:hover {
-                color: #b8b8b8;
-                display: none;
-            }
-            
-            #linkedin {
-                position: absolute;
-                left: 90.21%;
-                right: 8.19%;
-                top: 50px;
-                bottom: 92.87%;
-                color: #FFFFFF;
-                transition: color 0.2s;
-                font-size: 20px;
-                display: none;
-            }
-            
-            #linkedin:hover {
-                color: #b8b8b8;
-                display: none;
-            }
-            nav li {
-                display: inline-block;
-                margin-left: 70px;
-                padding-top: 10px;
-                position: relative;
-                /* display: none; */
-            }
-            
-            nav p {
-                color: rgb(254, 254, 254);
-                text-decoration: none;
-                text-transform: uppercase;
-                font-size: 20px;
-                /* display: none; */
-            }
-            
-            nav p:hover {
-                color: rgb(255, 255, 255);
-                /* display: none; */
-            }
-            
-            nav p::after {
-                content: '';
-                display: block;
-                height: 2px;
-                background-color: rgb(255, 255, 255);
-                position: absolute;
-                top: 55px;
-                width: 0%;
-                transition: ease-in-out 180ms;
-                opacity: 1;
-                transform: scale(0);
-                transform-origin: center;
-                /* display: none; */
-            }
-            
-            nav p:hover::after,
-            nav p:focus::after {
-                transform: scale(1);
             }
             
             #jobtitle1 {
@@ -538,6 +440,7 @@ nav a:focus::after {
                 position: absolute;
                 padding-top: 20px;
                 font-weight: 700;
+                z-index: -1;
             }
             
             #jobtitle2 {
@@ -554,6 +457,7 @@ nav a:focus::after {
                 color: #7FB9FD;
                 padding-top: 62px;
                 font-weight: 700;
+                z-index: -1;
             }
             
             #name1 {
@@ -564,7 +468,8 @@ nav a:focus::after {
                 bottom: 92.87%;
                 color: #FFFFFF;
                 font-size: 90px;
-                padding-left: 60px;
+                padding-left: 27px;
+                z-index: -1;
             }
             
             #name2 {
@@ -576,29 +481,83 @@ nav a:focus::after {
                 bottom: 92.87%;
                 color: #FFFFFF;
                 font-size: 90px;
-                padding-left: 60px;
+                padding-left: 27px;
                 color: gray;
+                z-index: -1;
             }
             
             #paragraph {
-                max-width: 300px;
+                width: 250px;
                 font-size: 15px;
                 position: absolute;
                 top: 50%;
                 color: rgb(255, 255, 255);
-                margin-left: -550px;
+                height: 300px;
+                display: flex;
+                margin: 0;
+                left: 21%;
+                z-index: -1;
             }
         
-            nav a {
-                font-size: 20px;
-                display: none;
-        
-            }
 
             .videos {
                 width: 50px;
                 height: 50px;
                 top: 350px;
                 left: 55px;
+                z-index: -1;
+            }
+
+            .my-button {
+                right: 10%;
+                transition: ease-in-out .25s;
+            }
+
+            
+            
+            .my-button:hover {
+                color: #545454;
+                transition:  all ease-in-out .25s;
+                
+            }
+
+            nav a {
+                font-size: 35px;
+                color: rgb(14, 14, 14);
+                transition: ease-in-out .25s;
+            }
+
+            nav a:hover {
+                transition: ease-in .25s;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+            display: none;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100% !important;
+            margin: 0;
+            
+          }
+          
+          nav ul i {
+            display: flex !important;
+            flex-direction: row !important;
+          }
+
+          nav ul.show {
+            display: flex;
+          }
+          
+          .my-button {
+            display: block;
+            color: white;
+            right: 10%;
+          }
+            nav {
+                background-color: rgb(14, 14, 14);
             }
         }

@@ -330,12 +330,20 @@ nav ul li:hover {
     
     #paragraph {
         max-width: 550px;
+        left: 43%;
+        top: 35%;
+    }
+
+    #evwalk {
+        height: 400px;
+        width: 400px;
+        top: 35%;
     }
     
     #toptext {
         position: absolute;
-        left: 780px;
-        top: 400px;
+        left: 47.2%;
+        top: 30%;
         color: #7FB9FD;
         font-size: 50px;
         padding-left: 20px;
@@ -403,7 +411,7 @@ nav ul li:hover {
                 width: 200px;
                 height: 200px;
                 position: absolute;
-                top: 25%;
+                top: 23.8%;
                 left: 25%;
                 z-index: -1;
             }
@@ -497,7 +505,7 @@ nav ul li:hover {
             }
             
             #paragraph {
-                width: 250px;
+                width: 260px;
                 font-size: 15px;
                 position: absolute;
                 top: 50%;

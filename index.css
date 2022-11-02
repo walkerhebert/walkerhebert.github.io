@@ -241,16 +241,25 @@ nav ul li:hover {
     }
     
     .logo2 {
-        display: flex;
+        /* display: flex;
         justify-content: center;
         position: absolute;
         width: 200px;
         height: 100px;
         left: 855px;
         background-image: url(tiny-g-logo.png);
-        /* background-color: white; */
         top: 20px;
-        background-size: cover;
+        background-size: cover; */
+        display: flex;
+    justify-content: left;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-image: url(tiny-g-logo.png);
+    top: 2%;
+    background-size: cover;
+    left: 3%;
+
     } 
     
     nav li {

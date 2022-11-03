@@ -557,6 +557,10 @@ nav ul li:hover {
             #my-nav {
                 display: none;
             }
+
+            nav ul {
+                padding-bottom: 300px;
+            }
             
             #my-nav.show {
                 justify-content: center;
@@ -570,13 +574,13 @@ nav ul li:hover {
                 display: flex;
                 flex-direction: row;
                justify-content: center;
-               margin-top: -150%;
+               /* margin-top: -150%; */
                margin-left: -19%;
             }
 
             .txtNav {
                 margin-left: -13.5%;
-                margin-bottom: 190%;
+                /* margin-bottom: 190%; */
                 justify-content: center;
                 align-items: center;
             }

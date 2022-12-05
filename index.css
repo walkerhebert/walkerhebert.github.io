@@ -16,6 +16,9 @@ body {
     color: rgb(255, 255, 255);
     caret-color: transparent;
     background-color: #000000;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .txtNav {
@@ -60,7 +63,7 @@ padding: 1em;
 font-weight: 700;
 }
 
-a:hover {
+a:hover, a:focus {
     color: #545454;
     transition: ease-in-out .25s;
 }
@@ -78,7 +81,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li:hover {
+nav ul li:hover, nav ul li:focus {
     color: #000000;
     transition: ease-in-out .25s;
     text-decoration: none;
@@ -103,19 +106,19 @@ nav ul li:hover {
     top: 2%;
     background-size: cover;
     left: 3%;
-    
+    transition: ease-out .5s;
 }
 
 
 
-.logo2:hover {
+.logo2:hover, .logo2:focus {
     transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transition: all .5s ease;
 }
 
-.logo2:not(:hover) {
+/* .logo2:not(:hover) {
     transition: ease-out .5s;
-}
+} */
 
 .fa-instagram {
     color: white;
@@ -258,16 +261,28 @@ nav ul li:hover {
 }
 
 .videos {
-    position: absolute;
     display: flex;
     flex-direction: row;
-    top: 550px;
-    width: 700px;
-    left: 1100px;
-    
+    align-items: center;
+    padding-top: 10vh;
+    justify-content: center;
 }
 
+.space {
+    width: 50px;
+}
 
+.you1 {
+    background-color: black;
+    width: 500px;
+    height: 300px;
+}
+.you2 {
+    background-color: black;
+    width: 500px;
+    height: 300px;
+
+}
 
  @media(max-width: 1920px) and (max-height: 1080px) {
     *  {
@@ -404,15 +419,6 @@ nav ul li:hover {
         font-size: 20px;
     }
 
-    .videos {
-        /* position: absolute; */
-        display: flex;
-        flex-direction: row;
-       bottom: 0%;
-        width: 700px;
-        left: 730px;
-        
-    }
 } 
 
 
@@ -429,6 +435,22 @@ nav ul li:hover {
                 background-size: cover;
                 width: 100%;
                 height: 100%;
+            }
+
+            .videos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 12vh;
+            }
+
+            .you1{
+                width: 290px;
+                height: 180px;
+            }
+            .you2{
+                width: 290px;
+                height: 180px;
             }
             
             .txtNav {
@@ -606,20 +628,11 @@ nav ul li:hover {
             }
         
 
-            .videos {
-                width: 50px;
-                height: 50px;
-                top: 350px;
-                left: 55px;
-                z-index: -1;
-            }
-
             .my-button {
                 right: 10%;
                 transition: ease-in-out .25s;
             }
 
-            
             
             .my-button:hover {
                 color: #545454;

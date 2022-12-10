@@ -239,7 +239,7 @@ nav ul li:hover, nav ul li:focus {
 
 #toptext {
     position: absolute;
-    left: 34%;
+    left: 38%;
     top: 400px;
     color: #7FB9FD;
     font-size: 50px;
@@ -252,7 +252,7 @@ nav ul li:hover, nav ul li:focus {
     position: absolute;
     display: flex;
     flex-direction: row;
-    left: 28%;
+    left: 34%;
     top: 450px;
     color: white;
     font-size: 24px;

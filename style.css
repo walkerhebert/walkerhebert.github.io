@@ -103,7 +103,7 @@ h2 {
     height: 100%;
     width: 100%;
     background: linear-gradient(to right, #0d0d0d 0%, black 100%);
-    padding-top: 5%;
+    padding-top: 1%;
 }
 
 .form-label {

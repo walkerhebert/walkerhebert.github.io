@@ -92,11 +92,6 @@
 <div class="container py-4">
 
     <form id="contactForm" action="https://formsubmit.co/walkerhebert.dev@gmail.com" method="POST">
-        
-        <div class="alert alert-success alert-dismissible fade show" role="alert" id="alert-box" style="display:none">
-            <strong>Success!</strong> Your message has been sent.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
 
       <div class="mb-3">
         <label class="form-label" for="name">Name</label>
@@ -120,25 +115,6 @@
   
   </div>
     </div>
-    <script>
-      var alertButton = document.getElementById("alert-button");
-      var alertBox = document.getElementById("alert-box");
-      var submitButton = document.getElementById("submit-button");
-      var alertBox2 = document.getElementById("alert-box2");
-      
-      alertButton.addEventListener("click", function() {
-        alertBox.style.display = "block";
-        setTimeout(function() {
-          alertBox.style.display = "none";
-        }, 2000);
-      });
-      
-      alertBox.addEventListener("click", function() {
-        alertBox.style.display = "none";
-        
-      });
-  
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>

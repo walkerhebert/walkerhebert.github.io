@@ -1,7 +1,7 @@
 body {
     width: 100%;
     height: 100%;
-    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(24, 24, 24) 78.9%);
+    background: linear-gradient(109.6deg, rgba(13, 13, 13, 0.93) 11.2%, rgb(24, 24, 24) 78.9%);
     background-repeat: no-repeat;
 }
 
@@ -65,7 +65,7 @@ h2 {
 }
 
 .card {
-    background-color: black;
+    background-color: rgb(39, 39, 39);
     color: white;
 }
 
@@ -85,9 +85,9 @@ h2 {
 
 .about-txt {
     color: #fff;
-    width: 80%;
+    width: 50%;
     text-align: center;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 
@@ -99,10 +99,14 @@ h2 {
     display: flex;
 }
 
+.proj-bg {
+    background-color: rgb(14, 14, 14);
+    padding-top: 2%;
+}
+
 .about-bg {
     height: 100%;
     width: 100%;
-    background: linear-gradient(to right, #0d0d0d 0%, black 100%);
     padding-top: 1%;
 }
 
@@ -137,6 +141,21 @@ h2 {
     width: 100%;
 }
 
+.topBtn {
+    position: sticky;
+    justify-content: center;
+    background-color: #fff;
+    color: #e6c404;
+    border: 2px solid #e6c404;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.topBtn:hover {
+    background-color: #e6c404;
+    color: #fff;
+}
+
 
 @media (max-width: 630px) {
     .cards {
@@ -148,5 +167,9 @@ h2 {
 
     .pad-bottom {
         padding-bottom: 5%;
+    }
+
+    .about-txt {
+        width: 80%;
     }
   }

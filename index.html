@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar navbar-dark" style="background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(24, 24, 24) 78.9%);">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark" style="background: linear-gradient(109.6deg, rgba(21, 21, 21, 0.93) 11.2%, rgb(24, 24, 24) 78.9%);" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="./images/wh-logo-layer.png" alt="logo" width="70px"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,6 +39,7 @@
                       <li><a class="dropdown-item" href="https://www.linkedin.com/in/walker-hebert-393915248/">LinkedIn</a></li>
                       <li><a class="dropdown-item" href="https://github.com/walkerhebert">GitHub</a></li>
                       <li><a class="dropdown-item" href="https://www.instagram.com/walkerhebertt/?hl=en">Instagram</a></li>
+                      <li><a class="dropdown-item" href="https://www.behance.net/walkerhebebc26">Behance</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -54,7 +55,16 @@
     <img src="./images/hero_1.jpg" class="img-fluid" alt="cover" width="100%" id="homee">
     </div>
 
-    <h2 id="proj">Projects</h2>
+
+    <div class="about-bg" id="aboutm">
+      <h2>About Me</h2>
+    <div class="center">
+    <p class="about-txt">Hey everyone, my name is Walker Hebert. I am a python software engineer who loves problem solving and producing efficient code! I have a passion for learning and am always keen on developing new skills. I graduated from DevMountain in December of 2022 in the python software engineering specialization. When im not working to solidify my coding skills, you can most probably find me spending time with friends and family! Need to get in touch with me? Please feel free to fill out the contact form below and I'll get back to you just as soon as I'm able to do so.</p>
+    </div>
+    </div>
+
+    <div class="proj-bg" id="proj">
+    <h2>Projects</h2>
 
     <div class="cards">
       <div class="pad-bottom">
@@ -73,21 +83,15 @@
           <img class="card-img-top" src="./images/Murgow Thumbnail.JPG" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Murgow</h5>
-            <p class="card-text">*UNDER CONSTRUCTION* <br> Contracted e-commerce site for Spraytans/Photography.</p>
+            <p class="card-text">*UNDER CONSTRUCTION* <br> Contracted e-commerce site for Spraytans & Photography.</p>
           </div>
         </div>
         </div>
     </div>
+  </div>
 
-    <div class="about-bg">
-      <h2 id="aboutm">About Me</h2>
-    <div class="center">
-    <p class="about-txt">Hey everyone, my name is Walker Hebert. I am a python software engineer who loves problem solving and producing efficient code! I have a passion for learning and am always keen on developing new skills. I graduated from DevMountain in December of 2022 in the python software engineering specialization. When im not working to solidify my coding skills, you can most probably find me spending time with friends and family! Need to get in touch with me? Please feel free to fill out the contact form below and I'll get back to you just as soon as I'm able to do so.</p>
-    </div>
-    </div>
-
-    <div class="contact-bg">
-    <h2 id="contactm">Contact Me</h2>
+    <div class="contact-bg" id="contactm">
+    <h2>Contact Me</h2>
 
 <div class="container py-4">
 
@@ -115,7 +119,28 @@
   
   </div>
     </div>
+
+    <div class="center">
+    <button class="topBtn" id="topBtn">Back to Top &#8593;</button>
+  </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+
+      document.getElementById("topBtn").addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
 </body>
 </html>

@@ -172,4 +172,8 @@ h2 {
     .about-txt {
         width: 80%;
     }
+
+    #card-top {
+        margin-top: 5%;
+    }
   }
